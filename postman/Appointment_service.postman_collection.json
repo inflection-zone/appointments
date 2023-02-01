@@ -1,0 +1,3668 @@
+{
+	"info": {
+		"_postman_id": "dad8e062-e924-46c1-ad8d-a446645d9b01",
+		"name": "Appointment_service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "business",
+			"item": [
+				{
+					"name": "add business",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ayurcare private limited\",\r\n    \"mobile\": \"+91 5345435435\",\r\n    \"email\": \"Ayurcare@gmail.com\",\r\n    \"about_us\": \"Blending Ayurveda with modern medicine\",\r\n    \"logo\": \"ojiio\",\r\n    \"display_picture\": \"jojioiuiipipiopi\",\r\n    \"address\": \"91 Springboard, Pune, Maharashtra, India\",\r\n    \"facebook\": \"facebook.com/Ayurcare\",\r\n    \"linkedin\": \"kopiwodiewiewiiewiwjde\",\r\n    \"twitter\": \"kopiwodiewiewiiewiwjde\",\r\n    \"instagram\": \"kopiwodiewiewiiewiwjde\",\r\n    \"yelp\": \"kopiwodiewiewiiewiwjde\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all active businesses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business/list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get business by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business/4ce279ea-85b7-4305-a036-2e1820542256",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business",
+								"4ce279ea-85b7-4305-a036-2e1820542256"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update business",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Excel Tech private limited\",\r\n    \"mobile\": \"+91 2324324332\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business/4ce279ea-85b7-4305-a036-2e1820542256",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business",
+								"4ce279ea-85b7-4305-a036-2e1820542256"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete business (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business/4ce279ea-85b7-4305-a036-2e1820542256",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business",
+								"4ce279ea-85b7-4305-a036-2e1820542256"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "business-node",
+			"item": [
+				{
+					"name": "add business node",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_id\": \"4ce279ea-85b7-4305-a036-2e1820542256\",\r\n    \"name\": \"Pune-Hadapsar branch\",\r\n    \"mobile\": \"+91 5435459990\",\r\n    \"email\": \"business@gmail.com\",\r\n    \"display_picture\": \"tsgf gf gf gfhgfh\",\r\n    \"address\": \"91 Springboard, Pune, Maharashtra, India\",\r\n    \"allow_walkin_appointments\": false,\r\n    \"allow_future_booking_for\": \"60d\",\r\n    \"longitude\": \"23.343454\",\r\n    \"lattitude\": \"76.897996\",\r\n    \"is_active\" :true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-node",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-node"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get nodes with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-node/list?node_name=hadapsar",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-node",
+								"list"
+							],
+							"query": [
+								{
+									"key": "node_name",
+									"value": "hadapsar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get business node by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-node/2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-node",
+								"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update business node",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Pune-Hadapsar Branch, Pune-Solapur highway\",\r\n    \"mobile\": \"+91 999998888\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-node/2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-node",
+								"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete business node (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-node/2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-node",
+								"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "business-user",
+			"item": [
+				{
+					"name": "add business user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"first_name\": \"Sachin\",\r\n    \"last_name\": \"Tendulkar\",\r\n    \"prefix\": \"Mr.\",\r\n    \"mobile\": \"+91 54343534\",\r\n    \"email\": \"sachin.tendulkar@gmail.com\",\r\n    \"dob\": \"1974-04-24\",\r\n    \"gender\": \"M\",\r\n    \"display_picture\": \"jjkbjbbhj gj jhj\",\r\n    \"about_me\": \"Nothing special, just a cricketer\",\r\n    \"qualification\": \"Diploma in pebbles counting\",\r\n    \"experience\": \"24 years\",\r\n    \"is_available_for_emergency\": false,\r\n    \"facebook\": \"kopiwodiewiewiiewiwjde\",\r\n    \"linkedin\": \"kopiwodiewiewiiewiwjde\",\r\n    \"twitter\": \"kopiwodiewiewiiewiwjde\",\r\n    \"instagram\": \"kopiwodiewiewiiewiwjde\",\r\n    \"yelp\": \"kopiwodiewiewiiewiwjde\",\r\n    \"is_active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add another business user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"first_name\": \"Kundlik\",\r\n    \"last_name\": \"Kharade\",\r\n    \"prefix\": \"Dr.\",\r\n    \"about_me\": \"I have been engaged in all kinds of Surgery (thyroid glands, mammary glands, esophageal diseases, gastrointestinal diseases, hepatobiliary and pancreatic diseases, vascular diseases, and endoscopic surgery), emergency, and anesthesia works for about 20 years.\",\r\n    \"mobile\": \"3865954111\",\r\n    \"email\": \"Kundlik.Kharade@gmail.com\",\r\n    \"dob\": \"1975-04-11\",\r\n    \"gender\": \"M\",\r\n    \"display_picture\": \"jjkbjbbhj gj jhj\",\r\n    \"qualification\": \"Diploma in pebbles counting\",\r\n    \"experience\": \"15 years\",\r\n    \"is_available_for_emergency\": false,\r\n    \"facebook\": \"kopiwodiewiewiiewiwjde\",\r\n    \"linkedin\": \"kopiwodiewiewiiewiwjde\",\r\n    \"twitter\": \"kopiwodiewiewiiewiwjde\",\r\n    \"instagram\": \"kopiwodiewiewiiewiwjde\",\r\n    \"yelp\": \"kopiwodiewiewiiewiwjde\",\r\n    \"is_active\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add one more business user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"first_name\": \"Deva\",\r\n    \"last_name\": \"Kharade\",\r\n    \"prefix\": \"Dr.\",\r\n    \"about_me\": \"Consultant Nephrologists Ruby Hall Clinic, Pune (Aug 1995 Onwards)\",\r\n    \"mobile\": \"3865954222\",\r\n    \"email\": \"deva.Kharade@gmail.com\",\r\n    \"dob\": \"1975-04-11\",\r\n    \"gender\": \"M\",\r\n    \"display_picture\": \"jjkbjbbhj gj jhj\",\r\n    \"qualification\": \"Diploma in pebbles counting\",\r\n    \"experience\": \"15 years\",\r\n    \"is_available_for_emergency\": false,\r\n    \"facebook\": \"kopiwodiewiewiiewiwjde\",\r\n    \"linkedin\": \"kopiwodiewiewiiewiwjde\",\r\n    \"twitter\": \"kopiwodiewiewiiewiwjde\",\r\n    \"instagram\": \"kopiwodiewiewiiewiwjde\",\r\n    \"yelp\": \"kopiwodiewiewiiewiwjde\",\r\n    \"is_active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get users with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user/list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user",
+								"list"
+							],
+							"query": [
+								{
+									"key": "business_node_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get business user by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user/ed1e6b96-5826-42cd-aacb-361adc4dd9f5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user",
+								"ed1e6b96-5826-42cd-aacb-361adc4dd9f5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update business user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"is_available_for_emergency\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user/ed1e6b96-5826-42cd-aacb-361adc4dd9f5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user",
+								"ed1e6b96-5826-42cd-aacb-361adc4dd9f5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete business user (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user/ed1e6b96-5826-42cd-aacb-361adc4dd9f5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user",
+								"ed1e6b96-5826-42cd-aacb-361adc4dd9f5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "business-service",
+			"item": [
+				{
+					"name": "add business service",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"name\": \"Cardiac Care\",\r\n    \"description\": \"cardiac Care\",\r\n    \"service_duration\": \"30m\",\r\n    \"fees\": 0.0,\r\n    \"is_taxable\": true,\r\n    \"tax_rate\": 30.0,\r\n    \"payment_required\": false,\r\n    \"payment_percent\": 25,\r\n    \"prior_booking_window\": \"2h\",\r\n    \"send_reminder\": true,\r\n    \"reminder_window\": \"4h\",\r\n    \"reminder_type\": \"SMS\",\r\n    \"allow_cancellation\": false,\r\n    \"cancellation_window\": \"2h\",\r\n    \"cancellation_charges\": 20.0,\r\n    \"enable_loyalty\": false,\r\n    \"display_service_picture\": null,\r\n    \"is_active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-service",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get business services with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-service/list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-service",
+								"list"
+							],
+							"query": [
+								{
+									"key": "service_name",
+									"value": "pathology",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get business service by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-service/0332fa87-cce8-4849-904b-cb0f76f3814f",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-service",
+								"0332fa87-cce8-4849-904b-cb0f76f3814f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update business service",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Post trauma & injury rehabilitation\",\r\n    \"allow_cancellation\":true,\r\n    \"cancellation_window\": \"5h\",\r\n    \"cancellation_charges\": 20.0\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-service/0332fa87-cce8-4849-904b-cb0f76f3814f",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-service",
+								"0332fa87-cce8-4849-904b-cb0f76f3814f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete business service (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-service/0332fa87-cce8-4849-904b-cb0f76f3814f",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-service",
+								"0332fa87-cce8-4849-904b-cb0f76f3814f"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "user-service",
+			"item": [
+				{
+					"name": "add user service",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_service_id\": \"5513a006-da32-4b2b-81f2-4d7df4217797\",\r\n    \"business_user_id\": \"ed1e6b96-5826-42cd-aacb-361adc4dd9f5\",\r\n    \"is_active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-service",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add multiple user services",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"services\": [\r\n        {\r\n            \"business_service_id\": \"2c824cec-d8b0-4c7b-bc29-3cb4964bf3b5\",\r\n            \"business_user_id\": \"ed1e6b96-5826-42cd-aacb-361adc4dd9f5\",\r\n            \"is_active\": true\r\n        },\r\n        {\r\n            \"business_service_id\": \"9a8b7ba7-b8e5-4a9d-8fd3-624bec367772\",\r\n            \"business_user_id\": \"ed1e6b96-5826-42cd-aacb-361adc4dd9f5\",\r\n            \"is_active\": true\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-service/add-multiple",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-service",
+								"add-multiple"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user services with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-service/list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-service",
+								"list"
+							],
+							"query": [
+								{
+									"key": "service_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "4",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user service by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-service/5deb7c3f-117a-4370-8085-f3f5959d78e9",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-service",
+								"5deb7c3f-117a-4370-8085-f3f5959d78e9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update userservice",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_user_id\": 2,\r\n    \"business_service_id\": 2,\r\n    \"is_active\":true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-service/5deb7c3f-117a-4370-8085-f3f5959d78e9",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-service",
+								"5deb7c3f-117a-4370-8085-f3f5959d78e9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete userservice (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-service/5deb7c3f-117a-4370-8085-f3f5959d78e9",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-service",
+								"5deb7c3f-117a-4370-8085-f3f5959d78e9"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "business-node-hours",
+			"item": [
+				{
+					"name": "add business-node-hours",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"4ce279ea-85b7-4305-a036-2e1820542256\",\r\n    \"type\": \"SPECIAL-DAY\",\r\n    \"day\": 3,\r\n    \"date\": \"2020-07-15T16:43:41.000Z\",\r\n    \"is_open\": false,\r\n    \"message\": null,\r\n    \"start_time\": null,\r\n    \"end_time\": null\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-node-hours",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-node-hours"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add multiple business-node-hours",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"day_wise_working_hours\": [\r\n\t\t{\r\n\t\t\t\"day\": 1,\r\n\t\t\t\"start_time\": \"14:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 2,\r\n\t\t\t\"start_time\": \"09:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 3,\r\n\t\t\t\"start_time\": \"09:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 4,\r\n\t\t\t\"start_time\": \"14:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 5,\r\n\t\t\t\"start_time\": \"16:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 6,\r\n\t\t\t\"start_time\": \"16:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-node-hours/add-multiple",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-node-hours",
+								"add-multiple"
+							]
+						},
+						"description": "This route allows to quick addition of work hours for multiple week-days. Please do not use it to add individual dates."
+					},
+					"response": []
+				},
+				{
+					"name": "update business-node-hours",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"type\": \"WEEKDAY\",\r\n    \"day\": 1,\r\n    \"date\": null,\r\n    \"is_open\": true,\r\n    \"message\": null,\r\n    \"start_time\": \"9:30:00\",\r\n    \"end_time\": \"22:15:00\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-node-hours/02be672b-cb40-48d5-b838-7cdca7c1fcee",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-node-hours",
+								"02be672b-cb40-48d5-b838-7cdca7c1fcee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update multiple business-node-hours",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"day_wise_working_hours\": [\r\n\t\t{\r\n\t\t\t\"day\": 1,\r\n\t\t\t\"start_time\": \"14:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 2,\r\n\t\t\t\"is_open\": false,\r\n\t\t\t\"start_time\": null,\r\n\t\t\t\"end_time\": null\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 3,\r\n\t\t\t\"start_time\": \"09:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 4,\r\n\t\t\t\"start_time\": \"14:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 5,\r\n\t\t\t\"start_time\": \"16:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 6,\r\n\t\t\t\"start_time\": \"16:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-node-hours/update-multiple/2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-node-hours",
+								"update-multiple",
+								"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8"
+							]
+						},
+						"description": "This route allows to quick update of work hours for multiple week-days. Please do not use it to update individual dates. \r\nPlease pass business user id as the last param in url to add user hours against."
+					},
+					"response": []
+				},
+				{
+					"name": "get business-node-hours with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-node-hours/list?business_node_id=2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-node-hours",
+								"list"
+							],
+							"query": [
+								{
+									"key": "business_node_id",
+									"value": "2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get business-node-hours by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-node-hours/02be672b-cb40-48d5-b838-7cdca7c1fcee",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-node-hours",
+								"02be672b-cb40-48d5-b838-7cdca7c1fcee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete business-node-hours (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"My very very special business private limited\",\r\n    \"mobile\": \"+91 999998888\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-node-hours/02be672b-cb40-48d5-b838-7cdca7c1fcee",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-node-hours",
+								"02be672b-cb40-48d5-b838-7cdca7c1fcee"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "business-user-hours",
+			"item": [
+				{
+					"name": "add business-user-hours for a date",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_user_id\": \"ed1e6b96-5826-42cd-aacb-361adc4dd9f5\",\r\n    \"type\": \"SPECIAL-DAY\",\r\n    \"day\": 5,\r\n    \"date\": \"2020-09-17T16:43:41.000Z\",\r\n    \"is_open\": false,\r\n    \"message\": null,\r\n    \"start_time\": null,\r\n    \"end_time\": null\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user-hours",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user-hours"
+							]
+						},
+						"description": "Adds user hours for given business node. Please note that if the user hours are beyond the node hours duration, they are truncated to the node hours start and end time for the given day."
+					},
+					"response": []
+				},
+				{
+					"name": "add business-user-hours for week-day",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_user_id\": \"ed1e6b96-5826-42cd-aacb-361adc4dd9f5\",\r\n    \"type\": \"WEEK-DAY\",\r\n    \"day\": 5,\r\n    \"date\": null,\r\n    \"is_open\": false,\r\n    \"message\": null,\r\n    \"start_time\": \"08:00:00\",\r\n    \"end_time\": \"23:00:00\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user-hours",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user-hours"
+							]
+						},
+						"description": "Adds user hours for given business node. Please note that if the user hours are beyond the node hours duration, they are truncated to the node hours start and end time for the given day."
+					},
+					"response": []
+				},
+				{
+					"name": "add multiple business-user-hours",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"business_user_id\": \"ed1e6b96-5826-42cd-aacb-361adc4dd9f5\",\r\n\t\"day_wise_working_hours\": [\r\n\t\t{\r\n\t\t\t\"day\": 1,\r\n\t\t\t\"start_time\": \"08:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 2,\r\n\t\t\t\"is_open\": false,\r\n\t\t\t\"start_time\": null,\r\n\t\t\t\"end_time\": null\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 3,\r\n\t\t\t\"start_time\": \"09:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 4,\r\n\t\t\t\"start_time\": \"14:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 5,\r\n\t\t\t\"start_time\": \"16:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 6,\r\n\t\t\t\"start_time\": \"16:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user-hours/add-multiple",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user-hours",
+								"add-multiple"
+							]
+						},
+						"description": "This route allows to quick addition of work hours for multiple week-days. Please do not use it to add individual dates."
+					},
+					"response": []
+				},
+				{
+					"name": "update business-user-hours",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_user_id\": \"ed1e6b96-5826-42cd-aacb-361adc4dd9f5\",\r\n    \"type\": \"WEEK-DAY\",\r\n    \"day\": 5,\r\n    \"date\": null,\r\n    \"is_open\": false,\r\n    \"message\": null,\r\n    \"start_time\": \"08:00:00\",\r\n    \"end_time\": \"23:00:00\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user-hours/ed1e6b96-5826-42cd-aacb-361adc4dd9f5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user-hours",
+								"ed1e6b96-5826-42cd-aacb-361adc4dd9f5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update multiple business-user-hours",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"day_wise_working_hours\": [\r\n\t\t{\r\n\t\t\t\"day\": 1,\r\n\t\t\t\"start_time\": \"14:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 2,\r\n\t\t\t\"is_open\": false,\r\n\t\t\t\"start_time\": null,\r\n\t\t\t\"end_time\": null\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 3,\r\n\t\t\t\"start_time\": \"09:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 4,\r\n\t\t\t\"start_time\": \"14:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 5,\r\n\t\t\t\"start_time\": \"16:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"day\": 6,\r\n\t\t\t\"start_time\": \"16:00:00\",\r\n\t\t\t\"end_time\": \"22:00:00\"\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user-hours/update-multiple/ed1e6b96-5826-42cd-aacb-361adc4dd9f5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user-hours",
+								"update-multiple",
+								"ed1e6b96-5826-42cd-aacb-361adc4dd9f5"
+							]
+						},
+						"description": "This route allows to quick update of work hours for multiple week-days. Please do not use it to update individual dates. \r\nPlease pass business user id as the last param in url to add user hours against."
+					},
+					"response": []
+				},
+				{
+					"name": "get business-user-hours with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user-hours/list?business_user_id=ed1e6b96-5826-42cd-aacb-361adc4dd9f5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user-hours",
+								"list"
+							],
+							"query": [
+								{
+									"key": "business_user_id",
+									"value": "ed1e6b96-5826-42cd-aacb-361adc4dd9f5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get business-user-hours by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user-hours/e235fbb6-0d38-40d0-b060-21bf8e141f94",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user-hours",
+								"e235fbb6-0d38-40d0-b060-21bf8e141f94"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete business-user-hours (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-user-hours/e235fbb6-0d38-40d0-b060-21bf8e141f94",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-user-hours",
+								"e235fbb6-0d38-40d0-b060-21bf8e141f94"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "add customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \" Tushar\",\r\n    \"last_name\": \" Katakdound\",\r\n    \"prefix\": \" Mr\",\r\n    \"mobile\": \"9421097464\",\r\n    \"email\": \"Tushar.Katakdound@gmail.com\",\r\n    \"dob\": \"1993-02-02\",\r\n    \"gender\": \"M\",\r\n    \"address\": \"Somewhere near Pune\",\r\n    \"in_app_user\": true,\r\n    \"display_picture\": \"https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png\",\r\n    \"is_active\": true\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customer",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add another customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Tom\",\r\n    \"last_name\": \"Cat\",\r\n    \"prefix\": \"Mr.\",\r\n    \"mobile\": \"1111111111\",\r\n    \"email\": \"Tom.Cat.Sr@gmail.com\",\r\n    \"dob\": \"1965-08-11\",\r\n    \"gender\": \"M\",\r\n    \"address\": \"Always chasing Mr. Jerry Mouse\",\r\n    \"in_app_user\": true,\r\n    \"display_picture\": \"https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png\",\r\n    \"is_active\": true\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customer",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get customer with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customer/list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"list"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "sick.patient@gmail.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get customer by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customer/6f90f671-e09f-43cf-8608-741aea0be08d",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"6f90f671-e09f-43cf-8608-741aea0be08d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update customer",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Phantom\",\r\n    \"last_name\": \"Cat\",\r\n    \"prefix\": \"Mr.\",\r\n    \"mobile\": \"+91 4343434\",\r\n    \"email\": \"sick.patient@gmail.com\",\r\n    \"in_app_user\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customer/6f90f671-e09f-43cf-8608-741aea0be08d",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"6f90f671-e09f-43cf-8608-741aea0be08d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete customer (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customer/6f90f671-e09f-43cf-8608-741aea0be08d",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"6f90f671-e09f-43cf-8608-741aea0be08d"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "7064f8c1-1af1-4d5a-9f9e-00c9ce8d68dd",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "658027c6-62b8-46fc-8699-24aff8a94bbe",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "business-skill",
+			"item": [
+				{
+					"name": "add business-skill",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"name\": \"some jgjhgj skill\",\r\n    \"description\": \"the special skill nobody else has!\",\r\n    \"display_picture\": \"\",\r\n    \"is_active\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-skill",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-skill"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get business-skill with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-skill/list?name=ski",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-skill",
+								"list"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "ski"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get business-skill by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-skill/fd56cebb-25a0-4ee9-b051-d4f0d2befe51",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-skill",
+								"fd56cebb-25a0-4ee9-b051-d4f0d2befe51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update business-skill",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"name\": \"some special dsadsa skill\",\r\n    \"description\": \"the special skill nobody else has!\",\r\n    \"display_picture\": \"\",\r\n    \"is_active\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-skill/fd56cebb-25a0-4ee9-b051-d4f0d2befe51",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-skill",
+								"fd56cebb-25a0-4ee9-b051-d4f0d2befe51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete business-skill (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/business-skill/fd56cebb-25a0-4ee9-b051-d4f0d2befe51",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"business-skill",
+								"fd56cebb-25a0-4ee9-b051-d4f0d2befe51"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "22884382-56c6-424f-90a5-6b49dc06881f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "54d39167-cfaa-4100-8d3a-0e7c1d0ecd1a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "user-skill",
+			"item": [
+				{
+					"name": "add user-skill",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_user_id\": \"ed1e6b96-5826-42cd-aacb-361adc4dd9f5\",\r\n    \"business_skill_id\": \"fd56cebb-25a0-4ee9-b051-d4f0d2befe51\",\r\n    \"is_active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-skill",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-skill"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add multiple user-skills",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"skills\": [\r\n        {\r\n            \"business_skill_id\": \"189550e3-f69f-4b53-84f3-b98b03fc25c9\",\r\n            \"business_user_id\": \"ed1e6b96-5826-42cd-aacb-361adc4dd9f5\",\r\n            \"is_active\": true\r\n        },\r\n        {\r\n            \"business_skill_id\": \"c1f13317-5d98-437d-84ac-1644314c216c\",\r\n            \"business_user_id\": \"ed1e6b96-5826-42cd-aacb-361adc4dd9f5\",\r\n            \"is_active\": true\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-skill/add-multiple",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-skill",
+								"add-multiple"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user-skill with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-skill/list?business_user_id=ed1e6b96-5826-42cd-aacb-361adc4dd9f5&business_skill_id=c1f13317-5d98-437d-84ac-1644314c216c",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-skill",
+								"list"
+							],
+							"query": [
+								{
+									"key": "business_user_id",
+									"value": "ed1e6b96-5826-42cd-aacb-361adc4dd9f5"
+								},
+								{
+									"key": "business_skill_id",
+									"value": "c1f13317-5d98-437d-84ac-1644314c216c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user-skill by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-skill/64849bfa-b787-4641-9cdb-f8a91384b234",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-skill",
+								"64849bfa-b787-4641-9cdb-f8a91384b234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user-skill",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_skill_id\": \"c1f13317-5d98-437d-84ac-1644314c216c\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-skill/64849bfa-b787-4641-9cdb-f8a91384b234",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-skill",
+								"64849bfa-b787-4641-9cdb-f8a91384b234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user-skill (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-skill/64849bfa-b787-4641-9cdb-f8a91384b234",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-skill",
+								"64849bfa-b787-4641-9cdb-f8a91384b234"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2f3c0df2-2e5a-42cb-975d-600c8d021938",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "1db3e944-72d8-48d6-85f8-f825366c6b71",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "notification",
+			"item": [
+				{
+					"name": "add notification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"customer_id\": \"7b5b609c-6aa1-477a-bcb0-e3f3201e33c8\",\r\n    \"title\": \"ewjrwejrpojwep\",\r\n    \"body\": \"Your appoint is booked\",\r\n    \"type\": \"SMS\",\r\n    \"type_id\": 1,\r\n    \"message\": \"Your appoint has been confirmed!\",\r\n    \"is_sent\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/notification",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"notification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get notification with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/notification/list?customer_id=7b5b609c-6aa1-477a-bcb0-e3f3201e33c8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"notification",
+								"list"
+							],
+							"query": [
+								{
+									"key": "customer_id",
+									"value": "7b5b609c-6aa1-477a-bcb0-e3f3201e33c8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get notification by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/notification/7541a75c-bf2d-48b9-865f-629e347478e3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"notification",
+								"7541a75c-bf2d-48b9-865f-629e347478e3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update notification",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Appointment with Dr. X\",\r\n    \"body\": \"Your appoint is booked subject to payment\",\r\n    \"type\": \"EMAIL\",\r\n    \"type_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/notification/7541a75c-bf2d-48b9-865f-629e347478e3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"notification",
+								"7541a75c-bf2d-48b9-865f-629e347478e3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete notification (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/notification/7541a75c-bf2d-48b9-865f-629e347478e3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"notification",
+								"7541a75c-bf2d-48b9-865f-629e347478e3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b5c92d60-eb3f-4c50-88e5-eafab9dc7efb",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a4e01e3f-89de-4ead-8a71-050bc86bc702",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "user-message",
+			"item": [
+				{
+					"name": "add user-message",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"customer_id\": \"7b5b609c-6aa1-477a-bcb0-e3f3201e33c8\",\r\n    \"body\": \"Your appoint is booked\",\r\n    \"type\": \"SMS\",\r\n    \"type_id\": 1,\r\n    \"message\": \"Your appoint has been confirmed!\",\r\n    \"is_sent\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-message",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user-message with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-message/list?customer_id=7b5b609c-6aa1-477a-bcb0-e3f3201e33c8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-message",
+								"list"
+							],
+							"query": [
+								{
+									"key": "customer_id",
+									"value": "7b5b609c-6aa1-477a-bcb0-e3f3201e33c8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user-message by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-message/01574f7c-fdbc-4987-9b63-0f4da9c7c007",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-message",
+								"01574f7c-fdbc-4987-9b63-0f4da9c7c007"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user-message",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\": \"jfs jpowep oiweop riewpoi r0w-ei r0iwe0wj!\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-message/01574f7c-fdbc-4987-9b63-0f4da9c7c007",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-message",
+								"01574f7c-fdbc-4987-9b63-0f4da9c7c007"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user-message (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user-message/01574f7c-fdbc-4987-9b63-0f4da9c7c007",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user-message",
+								"01574f7c-fdbc-4987-9b63-0f4da9c7c007"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5f4d0fab-6ed7-4f78-95f8-dc8d81f36101",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "91222161-523f-4a83-8eac-1d33d854d7a2",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "payment-transaction",
+			"item": [
+				{
+					"name": "add payment-transaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"customer_id\": \"7b5b609c-6aa1-477a-bcb0-e3f3201e33c8\",\r\n    \"total_amount\": 300.0,\r\n    \"external_id\": null,\r\n    \"currency\": \"INR\",\r\n    \"status\": null,\r\n    \"is_complete\": false,\r\n    \"initiated_on\": \"2020-07-12T03:19:34.064Z\",\r\n    \"completed_on\": null,\r\n    \"is_active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/payment-transaction",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"payment-transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get payment-transaction with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/payment-transaction/list?appointment_id=2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8&customer_id=7b5b609c-6aa1-477a-bcb0-e3f3201e33c8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"payment-transaction",
+								"list"
+							],
+							"query": [
+								{
+									"key": "appointment_id",
+									"value": "2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8"
+								},
+								{
+									"key": "customer_id",
+									"value": "7b5b609c-6aa1-477a-bcb0-e3f3201e33c8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get payment-transaction by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/payment-transaction/7b5b609c-6aa1-477a-bcb0-e3f3201e33c8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"payment-transaction",
+								"7b5b609c-6aa1-477a-bcb0-e3f3201e33c8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update payment-transaction",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"appointment_id\": \"7b5b609c-6aa1-477a-bcb0-e3f3201e33c8\",\r\n    \"total_amount\": 500.0,\r\n    \"external_id\": 334243413,\r\n    \"currency\": \"INR\",\r\n    \"status\": \"initiated\",\r\n    \"is_complete\": false,\r\n    \"initiated_on\": \"2020-07-12T03:19:34.064Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/payment-transaction/7b5b609c-6aa1-477a-bcb0-e3f3201e33c8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"payment-transaction",
+								"7b5b609c-6aa1-477a-bcb0-e3f3201e33c8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete payment-transaction (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/payment-transaction/7b5b609c-6aa1-477a-bcb0-e3f3201e33c8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"payment-transaction",
+								"7b5b609c-6aa1-477a-bcb0-e3f3201e33c8"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e1dcb728-547e-4d4b-953c-56812a5a6453",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "da557c11-8f2f-40b9-a8b9-45db5f297756",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "appointment-status",
+			"item": [
+				{
+					"name": "add appointment-status",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n\"status\": \"PAID\",\r\n\"status_code\":  1,\r\n\"status_color\":  \"#f9d232\",\r\n\"sequence\":  1,\r\n\"send_notification\":  true,\r\n\"notification_text\":  \"Payment for appointment is received. Confirmation is pending.\",\r\n\"send_sms\":  true,\r\n\"sms_text\":  \"Payment for appointment is received. Confirmation is pending.\",\r\n\"is_dashboard_status\": true,\r\n\"is_completed_status\": false,\r\n\"is_cancellation_status\": false,\r\n\"is_walkin_entry_status\": false,\r\n\"is_active\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment-status",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add appointment-status - multiple",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"statuses\": [\r\n        {\r\n            \"status\": \"PAID/CONFIRMATION PENDING\",\r\n            \"status_code\": 1,\r\n            \"sequence\": 1,\r\n            \"status_color\": \"#f9d232\",\r\n            \"send_notification\": true,\r\n            \"notification_text\": \"Confirmation is pending. (Payment for appointment is received)\",\r\n            \"send_sms\": true,\r\n            \"sms_text\": \"Appointment confirmation is pending.\",\r\n            \"is_dashboard_status\": true,\r\n            \"is_completed_status\": false,\r\n            \"is_cancellation_status\": false,\r\n            \"is_walkin_entry_status\": false,\r\n            \"is_active\": true\r\n        },\r\n        {\r\n            \"status\": \"CONFIRMED\",\r\n            \"status_code\": 2,\r\n            \"sequence\": 2,\r\n            \"status_color\": \"#f9d232\",\r\n            \"send_notification\": true,\r\n            \"notification_text\": \"Confirmed\",\r\n            \"send_sms\": true,\r\n            \"sms_text\": \"Appointment confirmed.\",\r\n            \"is_dashboard_status\": true,\r\n            \"is_completed_status\": false,\r\n            \"is_cancellation_status\": false,\r\n            \"is_walkin_entry_status\": false\r\n        },\r\n        {\r\n            \"status\": \"IN-PROGRESS\",\r\n            \"status_code\": 3,\r\n            \"sequence\": 3,\r\n            \"status_color\": \"#f9d242\",\r\n            \"send_notification\": false,\r\n            \"notification_text\": \"In progress\",\r\n            \"send_sms\": false,\r\n            \"sms_text\": \"Appointment in progress.\",\r\n            \"is_dashboard_status\": true,\r\n            \"is_completed_status\": false,\r\n            \"is_cancellation_status\": false,\r\n            \"is_walkin_entry_status\": false\r\n        },\r\n        {\r\n            \"status\": \"COMPLETED\",\r\n            \"status_code\": 4,\r\n            \"sequence\": 4,\r\n            \"status_color\": \"#f9d242\",\r\n            \"send_notification\": false,\r\n            \"notification_text\": \"Completed\",\r\n            \"send_sms\": false,\r\n            \"sms_text\": \"Appointment is complete.\",\r\n            \"is_dashboard_status\": true,\r\n            \"is_completed_status\": true,\r\n            \"is_cancellation_status\": false,\r\n            \"is_walkin_entry_status\": false\r\n        },\r\n        {\r\n            \"status\": \"CANCELLED\",\r\n            \"status_code\": 5,\r\n            \"sequence\": 5,\r\n            \"status_color\": \"#f9d242\",\r\n            \"send_notification\": false,\r\n            \"notification_text\": \"Cancelled\",\r\n            \"send_sms\": false,\r\n            \"sms_text\": \"Appointment is Cancelled.\",\r\n            \"is_dashboard_status\": true,\r\n            \"is_completed_status\": false,\r\n            \"is_cancellation_status\": true,\r\n            \"is_walkin_entry_status\": false\r\n        },\r\n        {\r\n            \"status\": \"POSTPONED\",\r\n            \"status_code\": 6,\r\n            \"sequence\": 6,\r\n            \"status_color\": \"#f9d242\",\r\n            \"send_notification\": true,\r\n            \"notification_text\": \"Appointment postponed\",\r\n            \"send_sms\": false,\r\n            \"sms_text\": \"Appointment is postponed.\",\r\n            \"is_dashboard_status\": true,\r\n            \"is_completed_status\": false,\r\n            \"is_cancellation_status\": true,\r\n            \"is_walkin_entry_status\": false\r\n        },\r\n        {\r\n            \"status\": \"WALK-IN\",\r\n            \"status_code\": 7,\r\n            \"sequence\": 7,\r\n            \"status_color\": \"#f9d242\",\r\n            \"send_notification\": true,\r\n            \"notification_text\": \"Walk-in apppointment started\",\r\n            \"send_sms\": false,\r\n            \"sms_text\": \"Walk-in apppointment started.\",\r\n            \"is_dashboard_status\": true,\r\n            \"is_completed_status\": false,\r\n            \"is_cancellation_status\": false,\r\n            \"is_walkin_entry_status\": true\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment-status/add-multiple",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment-status",
+								"add-multiple"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get appointment-status list with query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment-status/list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment-status",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get appointment-status by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment-status/b398abc0-17f0-40c1-950a-8a53eeace6fc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment-status",
+								"b398abc0-17f0-40c1-950a-8a53eeace6fc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update appointment-status",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"sequence\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment-status/b398abc0-17f0-40c1-950a-8a53eeace6fc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment-status",
+								"b398abc0-17f0-40c1-950a-8a53eeace6fc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete appointment-status (make inactive)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"My very very special business private limited\",\r\n    \"mobile\": \"+91 999998888\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/b398abc0-17f0-40c1-950a-8a53eeace6fc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"b398abc0-17f0-40c1-950a-8a53eeace6fc"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "appointment",
+			"item": [
+				{
+					"name": "find available slots",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/business/4ce279ea-85b7-4305-a036-2e1820542256/node/2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8/service/9a8b7ba7-b8e5-4a9d-8fd3-624bec367772/slots?from_date=2020-08-20&to_date=2020-08-20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"business",
+								"4ce279ea-85b7-4305-a036-2e1820542256",
+								"node",
+								"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8",
+								"service",
+								"9a8b7ba7-b8e5-4a9d-8fd3-624bec367772",
+								"slots"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "from_date",
+									"value": "2020-08-20"
+								},
+								{
+									"key": "to_date",
+									"value": "2020-08-20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find available slots for user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/user/ed1e6b96-5826-42cd-aacb-361adc4dd9f5/slots?from_date=2020-08-15&to_date=2020-08-25",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"user",
+								"ed1e6b96-5826-42cd-aacb-361adc4dd9f5",
+								"slots"
+							],
+							"query": [
+								{
+									"key": "from_date",
+									"value": "2020-08-15"
+								},
+								{
+									"key": "to_date",
+									"value": "2020-08-25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "book an appointment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"customer_id\": \"7b5b609c-6aa1-477a-bcb0-e3f3201e33c8\",\r\n    \"business_user_id\": \"ed1e6b96-5826-42cd-aacb-361adc4dd9f5\",\r\n    \"business_service_id\":\"9a8b7ba7-b8e5-4a9d-8fd3-624bec367772\",\r\n    \"start_time\":  \"2020-08-22T10:30:00Z\",\r\n    \"end_time\": \"2020-08-22T11:00:00Z\",\r\n    \"type\": \"IN-PERSON\",\r\n    \"note\": \"This is doctor appointment note\",\r\n    \"status_code\": \"1\",\r\n    \"fees\": 300,\r\n    \"tax\":10,\r\n    \"tip\": 0,\r\n    \"discount\": 0,\r\n    \"coupon_code\": null,\r\n    \"total\": 330,\r\n    \"is_paid\": true,\r\n    \"transaction_id\": 3432432\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/book",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "book another appointment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"business_node_id\": \"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8\",\r\n    \"customer_id\": \"6f90f671-e09f-43cf-8608-741aea0be08d\",\r\n    \"business_user_id\": \"ed1e6b96-5826-42cd-aacb-361adc4dd9f5\",\r\n    \"business_service_id\":\"9a8b7ba7-b8e5-4a9d-8fd3-624bec367772\",\r\n    \"start_time\":  \"2020-08-15T10:30:00Z\",\r\n    \"end_time\": \"2020-08-15T11:00:00Z\",\r\n    \"type\": \"IN-PERSON\",\r\n    \"note\": \"This is doctor appointment note\",\r\n    \"status_code\": \"1\",\r\n    \"fees\": 300,\r\n    \"tax\":10,\r\n    \"tip\": 0,\r\n    \"discount\": 0,\r\n    \"coupon_code\": null,\r\n    \"total\": 330,\r\n    \"is_paid\": true,\r\n    \"transaction_id\": 3432432\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/book",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get an appointment by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/3bffddee-8962-4327-bfcc-ff258aab5cfc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"3bffddee-8962-4327-bfcc-ff258aab5cfc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get appointments by user id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/user/ed1e6b96-5826-42cd-aacb-361adc4dd9f5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"user",
+								"ed1e6b96-5826-42cd-aacb-361adc4dd9f5"
+							]
+						},
+						"description": "For past appointments, pass query parameter as show=past.\r\nFor future appointments, pass query parameter as show=future.\r\nFor cancelled appointments, pass query parameter as show=cancelled.\r\nFor all appointments, do not pass show query parameter."
+					},
+					"response": []
+				},
+				{
+					"name": "get appointments by node id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/node/2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8?show=future",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"node",
+								"2236b3cb-f0d3-4f21-97b4-8bbb24c5aeb8"
+							],
+							"query": [
+								{
+									"key": "show",
+									"value": "future"
+								}
+							]
+						},
+						"description": "For past appointments, pass query parameter as show=past.\r\nFor future appointments, pass query parameter as show=future.\r\nFor cancelled appointments, pass query parameter as show=cancelled.\r\nFor all appointments, do not pass show query parameter."
+					},
+					"response": []
+				},
+				{
+					"name": "get appointments by customer id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/customer/7b5b609c-6aa1-477a-bcb0-e3f3201e33c8?show=future",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"customer",
+								"7b5b609c-6aa1-477a-bcb0-e3f3201e33c8"
+							],
+							"query": [
+								{
+									"key": "show",
+									"value": "future"
+								}
+							]
+						},
+						"description": "For past appointments, pass query parameter as show=past.\r\nFor future appointments, pass query parameter as show=future.\r\nFor cancelled appointments, pass query parameter as show=cancelled.\r\nFor all appointments, do not pass show query parameter."
+					},
+					"response": []
+				},
+				{
+					"name": "update the appointment",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"Confirmed\",\r\n    \"status_code\": \"2\",\r\n    \"transaction_id\": \"9a8b7ba7-b8e5-4a9d-8fd3-624bec367772\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/3bffddee-8962-4327-bfcc-ff258aab5cfc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"3bffddee-8962-4327-bfcc-ff258aab5cfc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancel the appointment",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/cancel/3bffddee-8962-4327-bfcc-ff258aab5cfc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"cancel",
+								"3bffddee-8962-4327-bfcc-ff258aab5cfc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "complete the appointment",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/complete/3bffddee-8962-4327-bfcc-ff258aab5cfc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"complete",
+								"3bffddee-8962-4327-bfcc-ff258aab5cfc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "confirm the appointment",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "tikme_api_key",
+								"type": "text",
+								"value": "tikme-ZzkaRSnHixeTfc38lJGBeQmFMGXJTsSz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/appointment/confirm/3bffddee-8962-4327-bfcc-ff258aab5cfc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"confirm",
+								"3bffddee-8962-4327-bfcc-ff258aab5cfc"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "23aa3d80-1aa3-47af-a0ec-45f1fb6d8eab",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "53e0f956-bb56-4511-8212-18d67906580a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "d2e25f86-4f19-42c0-b371-7d025df2eb08",
+			"key": "base_url",
+			"value": "http://localhost:3000"
+		},
+		{
+			"id": "5a62a851-7ec2-42f5-bb55-c5a996f13036",
+			"key": "base_url_remote",
+			"value": "http://localhost:3000"
+		},
+		{
+			"id": "292589d8-3a0c-4553-baf8-2f03588e4984",
+			"key": "base_url_local",
+			"value": "http://localhost:3000"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
